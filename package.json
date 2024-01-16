@@ -1,0 +1,16 @@
+{
+  "name": "ltv-project",
+  "version": "1.0.0",
+  "description": "A project to learn how to write a frontend framework",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+	"serve:examples": "npx http-server . -o ./examples/",
+	"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "workspaces": [
+	  "packages/runtime"
+	]
+}
