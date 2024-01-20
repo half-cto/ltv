@@ -2,6 +2,7 @@
   "name": "ltv",
   "version": "1.0.0",
   "main": "dist/ltv.js",
+  "type": "module",
   "scripts": {
     "prepack": "npm run buil",
     "build": "rollup -c",

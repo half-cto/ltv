@@ -1,5 +1,3 @@
-console.log('-----heeeelooo');
-
 // State of the app
 const todos = ['Walk the dog', 'Water the plants', 'Sand the charis'];
 
@@ -64,8 +62,13 @@ function addTodo() {
 }
 
 function removeTodo(index) {
-    todos.splice(index, 1);
-    todosList.childNodes[index].remove();
+    // todos.splice(index, 1);
+    // todosList.childNodes[index].remove();
+    console.log(`${todosList.childNodes[index].children[0]}`);
+    const todo = todosList.childNodes[index];
+    const span = todo.children[0];
+    span.classList.add('done');
+    todo.replaceChildren(span);
 }
 
 function renderTodoInEditMode(todo) {

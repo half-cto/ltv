@@ -9,3 +9,7 @@ button:disabled {
 button:enabled {
     background-color: lightgreen;
 }
+
+.done {
+    text-decoration: line-through;
+}
