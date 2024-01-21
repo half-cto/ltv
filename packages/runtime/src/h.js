@@ -31,24 +31,3 @@ export function hFragment(vNodes) {
         children: mapTextNodes(withoutNulls(vNodes)),
     };
 }
-
-function MessageComponent({ level, message }) {
-    return h('div', { class: `message message--${level}` }, [message]);
-}
-
-function MessageComponent2({ level, message }) {
-    return h('div', { class: `message message--${level}` }, [
-        h('p', {}, [message]),
-    ]);
-}
-
-console.log(
-    MessageComponent({ level: 'error', message: 'Seems like there is no <p>?' })
-);
-
-console.log(
-    MessageComponent2({
-        level: 'error',
-        message: 'Seems like there is no <p>?',
-    })
-);
